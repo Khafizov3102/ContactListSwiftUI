@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		2DB7FB272B3C8305003849D1 /* ContactListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB262B3C8305003849D1 /* ContactListSwiftUIApp.swift */; };
-		2DB7FB292B3C8305003849D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB282B3C8305003849D1 /* ContentView.swift */; };
+		2DB7FB292B3C8305003849D1 /* MainPersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB282B3C8305003849D1 /* MainPersonsView.swift */; };
 		2DB7FB2B2B3C8306003849D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB7FB2A2B3C8306003849D1 /* Assets.xcassets */; };
 		2DB7FB2E2B3C8306003849D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB7FB2D2B3C8306003849D1 /* Preview Assets.xcassets */; };
+		2DB7FB352B3C8322003849D1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB342B3C8322003849D1 /* DataStore.swift */; };
+		2DB7FB382B3C8393003849D1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB372B3C8393003849D1 /* Person.swift */; };
+		2DB7FB3A2B3C87A2003849D1 /* PersonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB392B3C87A2003849D1 /* PersonRowView.swift */; };
+		2DB7FB3C2B3C8E77003849D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB3B2B3C8E77003849D1 /* MainView.swift */; };
+		2DB7FB3E2B3C9183003849D1 /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB3D2B3C9183003849D1 /* PersonInfoView.swift */; };
+		2DB7FB402B3C9787003849D1 /* SecondPersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7FB3F2B3C9787003849D1 /* SecondPersonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DB7FB232B3C8305003849D1 /* ContactListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB7FB262B3C8305003849D1 /* ContactListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSwiftUIApp.swift; sourceTree = "<group>"; };
-		2DB7FB282B3C8305003849D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2DB7FB282B3C8305003849D1 /* MainPersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPersonsView.swift; sourceTree = "<group>"; };
 		2DB7FB2A2B3C8306003849D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DB7FB2D2B3C8306003849D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DB7FB342B3C8322003849D1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2DB7FB372B3C8393003849D1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2DB7FB392B3C87A2003849D1 /* PersonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowView.swift; sourceTree = "<group>"; };
+		2DB7FB3B2B3C8E77003849D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2DB7FB3D2B3C9183003849D1 /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
+		2DB7FB3F2B3C9787003849D1 /* SecondPersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPersonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,11 @@
 		2DB7FB252B3C8305003849D1 /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				2DB7FB262B3C8305003849D1 /* ContactListSwiftUIApp.swift */,
-				2DB7FB282B3C8305003849D1 /* ContentView.swift */,
-				2DB7FB2A2B3C8306003849D1 /* Assets.xcassets */,
+				2DD5E6D32B3CAC3600E58CB4 /* App */,
+				2DD5E6D42B3CAC4A00E58CB4 /* Views */,
+				2DD5E6D52B3CAC7200E58CB4 /* Services */,
+				2DB7FB362B3C8382003849D1 /* Models */,
+				2DD5E6D62B3CAC8900E58CB4 /* Resources */,
 				2DB7FB2C2B3C8306003849D1 /* Preview Content */,
 			);
 			path = ContactListSwiftUI;
@@ -65,6 +79,50 @@
 				2DB7FB2D2B3C8306003849D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DB7FB362B3C8382003849D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7FB372B3C8393003849D1 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DD5E6D32B3CAC3600E58CB4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7FB262B3C8305003849D1 /* ContactListSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2DD5E6D42B3CAC4A00E58CB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7FB392B3C87A2003849D1 /* PersonRowView.swift */,
+				2DB7FB282B3C8305003849D1 /* MainPersonsView.swift */,
+				2DB7FB3B2B3C8E77003849D1 /* MainView.swift */,
+				2DB7FB3D2B3C9183003849D1 /* PersonInfoView.swift */,
+				2DB7FB3F2B3C9787003849D1 /* SecondPersonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DD5E6D52B3CAC7200E58CB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7FB342B3C8322003849D1 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2DD5E6D62B3CAC8900E58CB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7FB2A2B3C8306003849D1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB7FB292B3C8305003849D1 /* ContentView.swift in Sources */,
+				2DB7FB292B3C8305003849D1 /* MainPersonsView.swift in Sources */,
+				2DB7FB3C2B3C8E77003849D1 /* MainView.swift in Sources */,
+				2DB7FB352B3C8322003849D1 /* DataStore.swift in Sources */,
+				2DB7FB402B3C9787003849D1 /* SecondPersonsView.swift in Sources */,
+				2DB7FB3A2B3C87A2003849D1 /* PersonRowView.swift in Sources */,
+				2DB7FB382B3C8393003849D1 /* Person.swift in Sources */,
+				2DB7FB3E2B3C9183003849D1 /* PersonInfoView.swift in Sources */,
 				2DB7FB272B3C8305003849D1 /* ContactListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
